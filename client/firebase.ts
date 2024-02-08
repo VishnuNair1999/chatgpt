@@ -4,12 +4,12 @@ import { getApp, getApps, initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCoeORrXDELdaux_JELA-sUFeoQ19eAU8U",
-  authDomain: "chatgpt-messenger-f0017.firebaseapp.com",
-  projectId: "chatgpt-messenger-f0017",
-  storageBucket: "chatgpt-messenger-f0017.appspot.com",
-  messagingSenderId: "61918611919",
-  appId: "1:61918611919:web:09a681b72d3ebabb1f6aba"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID
 };
 
 // Initialize Firebase
